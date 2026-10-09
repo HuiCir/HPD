@@ -30,15 +30,15 @@ Scores are percentages. The paper also reports model-size and training-schedule 
 
 ## Algorithm components
 
-- [`types.py`](hpd_clean_algorithms/types.py) defines harness-neutral trajectories, actions, observations, replay boundaries, and text examples.
-- [`harness_replay.py`](hpd_clean_algorithms/harness_replay.py) defines the adapter contract, deterministic reference replay, and construction of the three supervision views.
-- [`tir_training.py`](hpd_clean_algorithms/tir_training.py) validates complete T/I/R triplets, provides the balanced schedule, tokenization helper, completion-only loss, and a small optimizer loop.
-- [`tests/`](hpd_clean_algorithms/tests/) contains deterministic replay and schedule tests.
+- [`types.py`](hpd/types.py) defines harness-neutral trajectories, actions, observations, replay boundaries, and text examples.
+- [`harness_replay.py`](hpd/harness_replay.py) defines the adapter contract, deterministic reference replay, and construction of the three supervision views.
+- [`tir_training.py`](hpd/tir_training.py) validates complete T/I/R triplets, provides the balanced schedule, tokenization helper, completion-only loss, and a small optimizer loop.
+- [`tests/`](hpd/tests/) contains deterministic replay and schedule tests.
 
 Run the component tests with:
 
 ```bash
-python -m unittest discover -s hpd_clean_algorithms/tests -v
+python -m unittest discover -s hpd/tests -v
 ```
 
 The full Pi harness adapter, model loading, dataset preparation, distributed training, and end-to-end evaluation pipeline are still being organized for a later code upload.

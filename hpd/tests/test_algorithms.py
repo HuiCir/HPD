@@ -2,13 +2,13 @@ from __future__ import annotations
 
 import unittest
 
-from hpd_clean_algorithms.harness_replay import (
+from hpd.harness_replay import (
     ReplayError,
     build_three_view_examples,
     replay_trajectory,
 )
-from hpd_clean_algorithms.tir_training import ThreeStageSchedule, validate_complete_triplets
-from hpd_clean_algorithms.types import (
+from hpd.tir_training import ThreeStageSchedule, validate_complete_triplets
+from hpd.types import (
     ModelAction,
     ReferenceTurn,
     ToolCall,
