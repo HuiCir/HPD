@@ -1,0 +1,23 @@
+# Local build and review artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+output/
+tmp/
+revision-0917/
+comparison_*.md
+hpd_gap_*.md
+seed.md
+test.tex
+iclr2027_conference.tex
+iclr2027_conference.sty
+
+hpd_gap_*.tex
+plot_*.py
+iclr2027_conference.bib
