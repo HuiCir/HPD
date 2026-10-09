@@ -34,7 +34,13 @@ The published checkpoint is [`Migraine/Pi-Qwen3-8B`](https://huggingface.co/Migr
 
 ## Repository status
 
-The public manuscript source, compiled PDF, figures, and bibliography are included here. The training and evaluation implementation is being organized separately and will be uploaded to this repository in a later update; the current repository does not claim to contain a runnable code release.
+The public manuscript source, compiled PDF, figures, and bibliography are included here. The repository also contains the environment-independent replay and three-view T/I/R objective components in [`hpd_clean_algorithms/`](hpd_clean_algorithms/), with small unit tests. The full Pi harness adapter, model loading, dataset preparation, distributed training, and end-to-end evaluation pipeline are still being organized for a later code upload.
+
+Run the included component tests with:
+
+```bash
+python -m unittest discover -s hpd_clean_algorithms/tests -v
+```
 
 ## Building the paper
 
