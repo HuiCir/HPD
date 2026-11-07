@@ -41,7 +41,7 @@ Run the component tests with:
 python -m unittest discover -s hpd/tests -v
 ```
 
-The full Pi harness adapter, model loading, dataset preparation, distributed training, and end-to-end evaluation pipeline are still being organized for a later code upload.
+The [TRAJECT-Bench split index and reproduction package](reproducibility/trajectory_bench_split/) documents the 5,870-case dataset split and regenerates it from the pinned public source snapshot. The full Pi harness adapter, distributed training, and end-to-end evaluation pipeline are still being organized for a later code upload.
 
 ## Model
 

@@ -1,0 +1,76 @@
+{
+  "format": "pi-traject-bench-split-config-v1",
+  "dataset": {
+    "name": "TRAJECT-Bench",
+    "upstream_repository": "https://github.com/PengfeiHePower/TRAJECT-Bench",
+    "upstream_commit": "2723fd890778dbfb6af9e3aa8ee1c22272979468",
+    "expected_source_directory": "public_data",
+    "source_manifest_file": "source_manifest.json"
+  },
+  "seed": 20260714,
+  "processing": {
+    "active_tool_pool_cap": 12,
+    "exclusions": [
+      "empty_query",
+      "empty_final_answer",
+      "empty_tool_trajectory",
+      "missing_tool_name",
+      "marked_non_executable"
+    ],
+    "warnings_do_not_exclude": [
+      "repeated_tool_name_in_trajectory",
+      "contains_failed_tool_result",
+      "contains_empty_tool_output",
+      "contains_unbound_runtime_parameter",
+      "tool_count_outside_published_3_to_10_range",
+      "simple_hard_tool_trajectory_mismatch",
+      "duplicate_executed_trajectory_group"
+    ]
+  },
+  "grouping": {
+    "parallel": "Pair simple_ver and hard_ver rows by domain and source row index, including both rows in one group.",
+    "sequential": "Group rows within a domain by SHA-256 of the normalized ordered tool trajectory: tool names, required and optional parameters, execution statuses, and recorded outputs.",
+    "case_id": "IDs are derived from source domain and row index; parallel IDs also include simple_ver or hard_ver.",
+    "index_file": "processed/split_index.csv",
+    "group_index_file": "processed/groups.jsonl"
+  },
+  "split": {
+    "algorithm": "sha256_stratified_group_v1",
+    "ratios": {
+      "train": 0.8,
+      "validation": 0.1,
+      "test": 0.1
+    },
+    "stratification": [
+      "trajectory_type",
+      "domain",
+      "tool_count_bucket"
+    ],
+    "tool_count_bucket": "The maximum number of tools among group members; exact integer buckets through 10, then 11_plus.",
+    "quota": "Round the global validation group target with floor(n * 0.1 + 0.5). Within each stratum take floor(stratum_size * 0.1), then distribute the remaining quota by descending fractional remainder; ties use SHA-256 of quota:<seed>:<stratum>. The same per-stratum quota is assigned to test and validation.",
+    "group_order": "Within each stratum, sort group IDs by SHA-256 of <seed>:<group_id>. Assign the first quota to test, the next quota to validation, and the remainder to train.",
+    "sha256_encoding": "UTF-8",
+    "warning": "Changing the upstream snapshot, normalization code, config, or seed changes the split index. Keep this config and the recorded upstream commit together."
+  },
+  "expected_snapshot": {
+    "source_task_instances": 5870,
+    "accepted_task_instances": 5870,
+    "excluded_task_instances": 0,
+    "source_groups_before_signature_coalescing": 3870,
+    "split_groups": 3707,
+    "splits": {
+      "train": {
+        "groups": 2965,
+        "instances": 4703
+      },
+      "validation": {
+        "groups": 371,
+        "instances": 584
+      },
+      "test": {
+        "groups": 371,
+        "instances": 583
+      }
+    }
+  }
+}

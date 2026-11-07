@@ -1,0 +1,183 @@
+{
+  "format": "traject-bench-public-snapshot-v1",
+  "upstream": "https://github.com/PengfeiHePower/TRAJECT-Bench",
+  "upstream_commit": "2723fd890778dbfb6af9e3aa8ee1c22272979468",
+  "files": {
+    "README.md": {
+      "bytes": 59,
+      "sha256": "7d19e948426eca69438062202d8d83d77bf10a4365621e1e08561602080c8abd"
+    },
+    "parallel/Education/hard_ver.json": {
+      "bytes": 2914092,
+      "sha256": "8777583b94b8664c5f7e8551df79875384d0c632c63f3ad07dac536ddf98066c"
+    },
+    "parallel/Education/simple_ver.json": {
+      "bytes": 3119991,
+      "sha256": "0827644041a40b66095ff3921c4026448a22d588eed525479485c3c2b5544e10"
+    },
+    "parallel/Email/hard_ver.json": {
+      "bytes": 1559760,
+      "sha256": "78a19900ef8a03247e5f0cc90d51b058b7c20d107ceacdfe3bccfa52b53589f2"
+    },
+    "parallel/Email/simple_ver.json": {
+      "bytes": 1634133,
+      "sha256": "d58c186f6a40f20393b01b10d4f403c1ac9564400f1feb596e7e5fd21352f7ec"
+    },
+    "parallel/Finance/hard_ver.json": {
+      "bytes": 3788796,
+      "sha256": "119ced485622695fe644faa326327acbc48481f6d0ca75111dd0301f09a18d77"
+    },
+    "parallel/Finance/simple_ver.json": {
+      "bytes": 3995089,
+      "sha256": "aa7cee943bdbb316c2268cfeaf8b61b9d61130d62e55231597655ed55bfa1aa1"
+    },
+    "parallel/Gaming/hard_ver.json": {
+      "bytes": 2475401,
+      "sha256": "555a0dde695d1bc8bf8e8dc670a8dc2bdb80f0029519f2ffd8b86fc80884f1a6"
+    },
+    "parallel/Gaming/simple_ver.json": {
+      "bytes": 2562465,
+      "sha256": "9c5d3cef4372325b611ff8731c6f916226e243c83800f03ec9785a04532f7419"
+    },
+    "parallel/Mapping/hard_ver.json": {
+      "bytes": 3440543,
+      "sha256": "a6ced526a38ea41c923e7bb08ef59a8c3bfc044ea840422092d08597444c30c3"
+    },
+    "parallel/Mapping/simple_ver.json": {
+      "bytes": 3429150,
+      "sha256": "e41816fcf203b484ccbadf4b8e9d45e2a76b72fa69ef3bc7c38efc7f956925e8"
+    },
+    "parallel/Music/hard_ver.json": {
+      "bytes": 3586905,
+      "sha256": "b37bfa8c5e470ac52c4da31890aea54df93cb76cf389c5a9ac9e9b65e9a81a17"
+    },
+    "parallel/Music/simple_ver.json": {
+      "bytes": 3570150,
+      "sha256": "c54bde4fd7ae84d3028b97e912d7d2a296710d69d4939a337167d20564dca4b3"
+    },
+    "parallel/News_Media/hard_ver.json": {
+      "bytes": 4991560,
+      "sha256": "8b2ff92082c0d4f20c69b42ad1ea82a6cc0627085a55befdd52219d89cf9b02e"
+    },
+    "parallel/News_Media/simple_ver.json": {
+      "bytes": 4799784,
+      "sha256": "7be571b93b6b0ce7662aed27c849465ac1df0984f7107993a88cec2f23815931"
+    },
+    "parallel/Travel/hard_ver.json": {
+      "bytes": 3335749,
+      "sha256": "12f63f6147c8486695236262e2c63df578911afcafcf2a1099bedaa885683d96"
+    },
+    "parallel/Travel/simple_ver.json": {
+      "bytes": 3238924,
+      "sha256": "a174f64ab62ea7e012ea8916d0448b84d5321b6eddeab5c16bd9039a5accdc38"
+    },
+    "parallel/Weather/hard_ver.json": {
+      "bytes": 2791528,
+      "sha256": "86a7172292b33421c912561a9caccc77490060a1972dfed9216124c231b71472"
+    },
+    "parallel/Weather/simple_ver.json": {
+      "bytes": 2810732,
+      "sha256": "d12cab4854f9ddb913af2be78bc6db4f3c8684ac5c290c92d7e88fb82117d69a"
+    },
+    "parallel/eCommerce/hard_ver.json": {
+      "bytes": 3226287,
+      "sha256": "7e116cd6e3fc06307798b588e9d3a7b21baca94ece5943c3c46f1c490284468e"
+    },
+    "parallel/eCommerce/simple_ver.json": {
+      "bytes": 3213685,
+      "sha256": "37fd389ab673696a65ee023108ec6df5cac8bd18b779a737cab610b361741ecd"
+    },
+    "selected_category.json": {
+      "bytes": 31297,
+      "sha256": "809064d1c8e07ed93cbcf22e52e69d2f62dd3028a66d3194dfa03d5fbb8797d5"
+    },
+    "sequential/Education/traj_query.json": {
+      "bytes": 4183293,
+      "sha256": "393c0f068e4f561222bedb7ff402843ab5728419755f4038c302412719016e52"
+    },
+    "sequential/Finance/traj_query.json": {
+      "bytes": 2644361,
+      "sha256": "850f967e98770d2633ce50ee4ff54107f2da96211fac049c05ac665b3d925d53"
+    },
+    "sequential/Gaming/traj_query.json": {
+      "bytes": 2939159,
+      "sha256": "ef0f39343359c5a9c6ec652ac3dc3da517d68ffd0e05103620d1b842957ebab6"
+    },
+    "sequential/Mapping/traj_query.json": {
+      "bytes": 3742024,
+      "sha256": "318f7ce2b42b2527a9f1820bd480516218de3024c6d7fb2e86083e4e80c3604c"
+    },
+    "sequential/Music/traj_query.json": {
+      "bytes": 4000827,
+      "sha256": "b6729a0f4f6c100257dd07657760da2c146f0b2b5deb9e8f35e2b53885ce7b2a"
+    },
+    "sequential/News_Media/traj_query.json": {
+      "bytes": 3801018,
+      "sha256": "a78610c47e8d856647979b592154d1d97682faf7f9cb7aed600bada1e20c4290"
+    },
+    "sequential/Travel/sequence.json": {
+      "bytes": 79304,
+      "sha256": "ecbcc6aaf022edbcc6a4dfcd0d53b26af78b99afb1fde67c52c36244a9593c5d"
+    },
+    "sequential/Travel/simple_ver.json": {
+      "bytes": 4132521,
+      "sha256": "7fe8fe44431673f02ee746a67e6e5e54148a316d4c7402af890ad63b4c6b9073"
+    },
+    "sequential/Travel/traj_query.json": {
+      "bytes": 3745837,
+      "sha256": "05f32d369785f9a97a0bd78b40514468d965053fa790c551639fb893febbc556"
+    },
+    "sequential/Weather/traj_query.json": {
+      "bytes": 4043211,
+      "sha256": "50d5a0e14ca790dd43e8221ca84c2390199183ac4a812f81dce5412ca31e29a3"
+    },
+    "sequential/eCommerce/traj_query.json": {
+      "bytes": 4115332,
+      "sha256": "1cbd0ffd10c2856af531bc1c93b6ec331bf020570ed293df0230b1ce61efe421"
+    },
+    "tools/Education_tool.json": {
+      "bytes": 427526,
+      "sha256": "c9a82fe41cc43015dd99fc81b85e6dee77ff25421a1831904212972e6a291861"
+    },
+    "tools/Email_tool.json": {
+      "bytes": 327289,
+      "sha256": "3b1bb8b5103b195a2d82e44fbb710ba31192002ae6516b10f21dd6a371f802d4"
+    },
+    "tools/Finance_tool.json": {
+      "bytes": 1547889,
+      "sha256": "74012710420a59bbd21f7c53f119960cc20a8bea9efcc2fadc8d53232e236071"
+    },
+    "tools/Gaming_tool.json": {
+      "bytes": 350519,
+      "sha256": "5841716ef22bd662dcf31265604d106fddb1da6b94ff7e8374a477be547a46e3"
+    },
+    "tools/Mapping_tool.json": {
+      "bytes": 821304,
+      "sha256": "d43bb0f56f793996e213195d28d142b1ca6eeb0a069fa91234243b7bca2c1d16"
+    },
+    "tools/Music_tool.json": {
+      "bytes": 538207,
+      "sha256": "2f14b90e97dcde65cf714b3b72558e661f6e7569c4106ec643726518f54b1065"
+    },
+    "tools/News_Media_tool.json": {
+      "bytes": 508031,
+      "sha256": "ce0c855a8321717b0b74d1260f0e5c5773249bab852ab024d0fdb82877424506"
+    },
+    "tools/Travel_tool.json": {
+      "bytes": 574059,
+      "sha256": "ceda5ae9a576be4353ee0c0f49a0ba84ea5e71382f329ec4b0f37acd462a05ca"
+    },
+    "tools/Weather_tool.json": {
+      "bytes": 847862,
+      "sha256": "c6a779c702611efc7c8f49f02ffb15c9ef393c7b82d91b7ba78a7d32df84a5f3"
+    },
+    "tools/all_tools.json": {
+      "bytes": 6302297,
+      "sha256": "ef4388781a303b3b7e7837eb8007967b1d2b95090d63a9576633a4a494307fb6"
+    },
+    "tools/eCommerce_tool.json": {
+      "bytes": 359629,
+      "sha256": "9ab0f259da608846a994681619f65be86d55b0ae6ed782c184c26b8111a1757e"
+    }
+  }
+}
